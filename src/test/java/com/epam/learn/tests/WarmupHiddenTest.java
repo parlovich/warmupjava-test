@@ -4,7 +4,6 @@ import com.epam.learn.TemperatureConverter;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for Warmup task.
@@ -14,8 +13,22 @@ public class WarmupHiddenTest
     private static final TemperatureConverter converter = new TemperatureConverter();
 
     @Test
-    public void hiddenTest()
-    {
-        assertEquals(50, converter.toFahrenheit(10));
+    public void cold() {
+        assertEquals(-4, converter.toFahrenheit(-20));
+    }
+
+    @Test
+    public void cool() {
+        assertEquals(32, converter.toFahrenheit(0));
+    }
+
+    @Test
+    public void medium() {
+        assertEquals(59, converter.toFahrenheit(15));
+    }
+
+    @Test
+    public void hot() {
+        assertEquals(104, converter.toFahrenheit(40));
     }
 }
