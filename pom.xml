@@ -21,8 +21,7 @@
       <groupId>com.epam.learn</groupId>
       <artifactId>warmup-java</artifactId>
       <version>1.0-SNAPSHOT</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/warmup-java-1.0-SNAPSHOT.jar</systemPath>
+      <scope>test</scope>
     </dependency>
 
       <dependency>
