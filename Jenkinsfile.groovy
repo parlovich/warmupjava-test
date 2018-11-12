@@ -20,10 +20,10 @@ node {
     }
     stage('Test') {
         withMaven(
-            maven: 'M3',
-            jdk: 'jdk8',
-            mavenLocalRepo: '.repository'
-            ) {
+                maven: 'M3',
+                jdk: 'jdk8',
+                mavenLocalRepo: '.repository'
+        ) {
             dir('warmupjava') {
                 sh "mvn clean -DskipTests install"
             }
